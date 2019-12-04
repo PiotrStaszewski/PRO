@@ -1,0 +1,14 @@
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\bin\Debug\netcoreapp2.2\PRO_BackendApp.deps.json
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\bin\Debug\netcoreapp2.2\PRO_BackendApp.runtimeconfig.json
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\bin\Debug\netcoreapp2.2\PRO_BackendApp.runtimeconfig.dev.json
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\bin\Debug\netcoreapp2.2\PRO_BackendApp.dll
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.csprojAssemblyReference.cache
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.csproj.CoreCompileInputs.cache
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.RazorAssemblyInfo.cache
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.RazorAssemblyInfo.cs
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.AssemblyInfoInputs.cache
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.AssemblyInfo.cs
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.RazorTargetAssemblyInfo.cache
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\bin\Debug\netcoreapp2.2\PRO_BackendApp.pdb
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.dll
+C:\Users\piotr\source\repos\PRO_BackendApp\PRO_BackendApp\obj\Debug\netcoreapp2.2\PRO_BackendApp.pdb
