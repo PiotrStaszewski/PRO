@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PRO_BackendApp_v2.Models;
 
 namespace PRO_BackendApp_v2.Controllers
@@ -33,6 +34,46 @@ namespace PRO_BackendApp_v2.Controllers
                 return NotFound();
             }
             return Ok(product);
+        }
+
+        [HttpPost]
+        public IActionResult Create(Produkt newProduct)
+        {
+            _context.Produkt.Add(newProduct);
+            _context.SaveChanges();
+
+            return StatusCode(201, newProduct);
+        }
+
+        [HttpPut("{IdProdukt:int}")]
+        public IActionResult Update(Produkt updatedProduct)
+        {
+            var c = _context.Produkt.FirstOrDefault(e => e.IdProduktu == updatedProduct.IdProduktu);
+
+            if (c == null)
+            {
+                return NotFound();
+            }
+            _context.Produkt.Attach(updatedProduct);
+            _context.Entry(updatedProduct).State = EntityState.Modified;
+            _context.SaveChanges();
+
+            return Ok(updatedProduct);
+        }
+        [HttpDelete("{IdProdukt:int}")]
+        public IActionResult Delete(int IdProduktu)
+        {
+            var produkt = _context.Produkt.FirstOrDefault(e => e.IdProduktu == IdProduktu);
+
+            if (produkt == null)
+            {
+                return NotFound();
+            }
+
+            _context.Produkt.Remove(produkt);
+            _context.SaveChanges();
+
+            return Ok(produkt);
         }
     }
 }

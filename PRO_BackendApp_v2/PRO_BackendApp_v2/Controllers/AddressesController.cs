@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PRO_BackendApp_v2.Models;
 
 namespace PRO_BackendApp_v2.Controllers
@@ -33,6 +34,46 @@ namespace PRO_BackendApp_v2.Controllers
                 return NotFound();
             }
             return Ok(address);
+        }
+
+        [HttpPost]
+        public IActionResult Create(Adres newAdres)
+        {
+            _context.Adres.Add(newAdres);
+            _context.SaveChanges();
+
+            return StatusCode(201, newAdres);
+        }
+
+        [HttpPut("{IdAdres:int}")]
+        public IActionResult Update(Adres updatedAddress)
+        {
+            var c = _context.Adres.FirstOrDefault(e => e.IdAdres == updatedAddress.IdAdres);
+
+            if (c == null)
+            {
+                return NotFound();
+            }
+            _context.Adres.Attach(updatedAddress);
+            _context.Entry(updatedAddress).State = EntityState.Modified;
+            _context.SaveChanges();
+
+            return Ok(updatedAddress);
+        }
+        [HttpDelete("{IdAdres:int}")]
+        public IActionResult Delete(int IdAdres)
+        {
+            var adres = _context.Adres.FirstOrDefault(e => e.IdAdres == IdAdres);
+
+            if (adres == null)
+            {
+                return NotFound();
+            }
+
+            _context.Adres.Remove(adres);
+            _context.SaveChanges();
+
+            return Ok(adres);
         }
     }
 }
