@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PRO_BackendApp_v2</name>
+    </assembly>
+    <members>
+        <member name="M:PRO_BackendApp_v2.Controllers.ClientsController.getClients">
+            <summary>
+            metoda zwraca klientów
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -12,3 +12,4 @@ C:\Users\piotr\source\repos\PRO_BackendApp_v2\PRO_BackendApp_v2\obj\Debug\netcor
 C:\Users\piotr\source\repos\PRO_BackendApp_v2\PRO_BackendApp_v2\bin\Debug\netcoreapp2.2\PRO_BackendApp_v2.pdb
 C:\Users\piotr\source\repos\PRO_BackendApp_v2\PRO_BackendApp_v2\obj\Debug\netcoreapp2.2\PRO_BackendApp_v2.dll
 C:\Users\piotr\source\repos\PRO_BackendApp_v2\PRO_BackendApp_v2\obj\Debug\netcoreapp2.2\PRO_BackendApp_v2.pdb
+C:\Users\piotr\source\repos\PRO_BackendApp_v2\PRO_BackendApp_v2\bin\Debug\netcoreapp2.2\PRO_BackendApp_v2.xml

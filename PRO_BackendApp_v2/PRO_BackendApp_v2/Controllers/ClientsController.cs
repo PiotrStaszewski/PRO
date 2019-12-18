@@ -19,11 +19,17 @@ namespace PRO_BackendApp_v2.Controllers
             _context = context;
         }
         //api/restaurant
+        /// <summary>
+        /// metoda zwraca klientów
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult getClients()
         {
             return Ok(_context.Klient.ToList());
         }
+
+
         //api/restaurant/1
         [HttpGet("{id:int}")]
         public IActionResult getClient(int id)
